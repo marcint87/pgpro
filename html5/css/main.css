@@ -128,7 +128,7 @@ body {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  background-color: #54422f;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
   margin-left: 16px;
 }
@@ -139,6 +139,7 @@ body {
 
 .round-background:hover {
   background-color: #d4213d;
+  cursor: pointer;
 }
 
 .icon-hover:hover:before {
@@ -161,10 +162,6 @@ body {
       justify-content: space-between;
 }
 
-.wrapper li {
-  list-style: none;
-}
-
 .wrapper div {
   width: 26.4505%;
   margin-top: 60px;
@@ -181,13 +178,16 @@ body {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .wrapper li {
+  list-style: none;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
 }
@@ -232,15 +232,31 @@ i.flaticon-earth {
 }
 
 .input {
-  padding: 25px 21px;
+  padding: 15px 21px;
   border: 1px solid #848484;
-  border-radius: 5px 0 0 5px;
+  border-radius: 10px 0 0 10px;
+  width: 305px;
+  height: 56px;
+  box-sizing: border-box;
+  margin-right: 0;
+}
+
+.button {
+  height: 56px;
+  width: 141px;
+  background-color: #d4213d;
+  border: none;
+  margin-left: -3px;
+  box-sizing: border-box;
+  border-radius: 0 10px 10px 0;
+  color: #fff;
+  font: 22px/0.8181 "Myriad Pro", Arial, sans-serif;
 }
 
 .title-form {
   color: #222222;
   text-align: left;
-  margin-top: 31px;
+  margin-top: 0;
   font: 22px/0.818181 'Roboto';
 }
 
@@ -259,6 +275,8 @@ input[type="button"] {
   width: 500px;
   height: 307px;
   margin-left: 8.6875%;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .get-in-touch {
@@ -269,6 +287,7 @@ input[type="button"] {
       flex-flow: column nowrap;
   -ms-flex-align: center;
       align-items: center;
+  padding-bottom: 61px;
 }
 
 .text-get-in-touch {
@@ -323,8 +342,10 @@ input[type="button"] {
   font-size: 40px;
 }
 
-.people {
+.photos {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .footer {
@@ -336,7 +357,7 @@ input[type="button"] {
       justify-content: center;
 }
 
-.social {
+.footer-nav {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
@@ -347,7 +368,7 @@ input[type="button"] {
       align-items: center;
 }
 
-.social li a {
+.footer-nav li a {
   text-decoration: none;
   color: #848484;
   font: 16px/1.625 Arial;
