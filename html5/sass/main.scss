@@ -291,8 +291,17 @@ input[type="button"] {
 .social-icons-wrapper {
 	display: flex;
 	width: 254px;
-	
+	perspective: 1000;
 	// justify-content: space-between;
+}
+
+.social-icons-wrapper:hover .flaticon-twitter-logo-button,
+.social-icons-wrapper:hover .flaticon-facebook-logo-button,
+.social-icons-wrapper:hover .flaticon-pinterest-logo-button,
+.social-icons-wrapper:hover .flaticon-google-plus-social-logotype,
+.social-icons-wrapper:hover .flaticon-linkedin-button,
+.social-icons-wrapper:hover .flaticon-youtube-logotype {
+	transform: rotateY(180deg);
 }
 
 .icon-social {

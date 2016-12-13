@@ -321,6 +321,16 @@ input[type="button"] {
   display: -ms-flexbox;
   display: flex;
   width: 254px;
+  perspective: 1000;
+}
+
+.social-icons-wrapper:hover .flaticon-twitter-logo-button,
+.social-icons-wrapper:hover .flaticon-facebook-logo-button,
+.social-icons-wrapper:hover .flaticon-pinterest-logo-button,
+.social-icons-wrapper:hover .flaticon-google-plus-social-logotype,
+.social-icons-wrapper:hover .flaticon-linkedin-button,
+.social-icons-wrapper:hover .flaticon-youtube-logotype {
+  transform: rotateY(180deg);
 }
 
 .icon-social {
