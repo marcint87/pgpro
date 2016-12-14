@@ -1,4 +1,7 @@
-//  ikony
+ /* ====================================
+ 		icons
+
+ ======================================= */
 
 @font-face {
   font-family: "Flaticon";
@@ -49,13 +52,19 @@ font-style: normal;
 	color: #fff;
 }
 
-//  ########## main css code 
+ /* ====================================
+ 		main css code
+
+ ======================================= */
 
 body {
 	background-color: #fff;
 }
 
-// ###### feature section
+ /* ====================================
+ 		feature section
+
+ ======================================= */
 
 .feature {
 	border-top: 10px solid #d4213d;
@@ -120,7 +129,10 @@ body {
 	color: #f4f4f4;
 }
 
-// ###### trple icons section
+ /* ====================================
+ 		triple icons section 
+
+ ======================================= */
 
 .triple {
 	height: 335px;
@@ -181,7 +193,10 @@ i.flaticon-earth {
 
 }
 
-//  #### form section 
+ /* ====================================
+ 		form section
+
+ ======================================= */
 
 .form-section {
 	height: 427px;
@@ -251,7 +266,10 @@ input[type="button"] {
 
 
 
-// ### get-in-touch section
+/* ====================================
+ 		get-in-touch section
+
+ ======================================= */
 
 .get-in-touch {
 	height: 466px;
@@ -334,15 +352,23 @@ input[type="button"] {
 }
 
 
-// ---- carousel subsection -----
+/* carousel subsection
+   ========================================================================== */
+   
 
 .photos {
 	list-style-type: none;
 	margin-top: 0;
 	margin-bottom: 0;
+	padding: 0;
+}
+.photos img {
+	width: 50px;
 }
 
-// ##### footer section 
+/* ==========================================================================
+                                    FOOTER
+   ========================================================================== */
 
 .footer {
 	height: 130px;

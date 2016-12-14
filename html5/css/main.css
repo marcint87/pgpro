@@ -1,3 +1,7 @@
+/* ====================================
+ 		icons
+
+ ======================================= */
 @font-face {
   font-family: "Flaticon";
   src: url("../fonts/Flaticon.eot");
@@ -76,10 +80,18 @@
   color: #fff;
 }
 
+/* ====================================
+ 		main css code
+
+ ======================================= */
 body {
   background-color: #fff;
 }
 
+/* ====================================
+ 		feature section
+
+ ======================================= */
 .feature {
   border-top: 10px solid #d4213d;
   height: 600px;
@@ -146,6 +158,10 @@ body {
   color: #f4f4f4;
 }
 
+/* ====================================
+ 		triple icons section 
+
+ ======================================= */
 .triple {
   height: 335px;
   padding-top: 60px;
@@ -214,6 +230,10 @@ i.flaticon-earth {
       align-self: center;
 }
 
+/* ====================================
+ 		form section
+
+ ======================================= */
 .form-section {
   height: 427px;
   background-color: #e3e3e3;
@@ -279,6 +299,10 @@ input[type="button"] {
   overflow: hidden;
 }
 
+/* ====================================
+ 		get-in-touch section
+
+ ======================================= */
 .get-in-touch {
   height: 466px;
   display: -ms-flexbox;
@@ -367,12 +391,22 @@ input[type="button"] {
   font-size: 40px;
 }
 
+/* carousel subsection
+   ========================================================================== */
 .photos {
   list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 0;
 }
 
+.photos img {
+  width: 50px;
+}
+
+/* ==========================================================================
+                                    FOOTER
+   ========================================================================== */
 .footer {
   height: 130px;
   background-color: #e3e3e3;
