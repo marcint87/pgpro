@@ -238,7 +238,7 @@ i.flaticon-earth {
   width: 305px;
   height: 56px;
   box-sizing: border-box;
-  margin-right: 0;
+  margin-right: -1px;
 }
 
 .button {
@@ -324,12 +324,27 @@ input[type="button"] {
   perspective: 1000;
 }
 
-.social-icons-wrapper:hover .flaticon-twitter-logo-button,
-.social-icons-wrapper:hover .flaticon-facebook-logo-button,
-.social-icons-wrapper:hover .flaticon-pinterest-logo-button,
-.social-icons-wrapper:hover .flaticon-google-plus-social-logotype,
-.social-icons-wrapper:hover .flaticon-linkedin-button,
-.social-icons-wrapper:hover .flaticon-youtube-logotype {
+.flaticon-twitter-logo-button:hover {
+  transform: rotateY(180deg);
+}
+
+.flaticon-facebook-logo-button:hover {
+  transform: rotateY(180deg);
+}
+
+.flaticon-pinterest-logo-button:hover {
+  transform: rotateY(180deg);
+}
+
+.flaticon-google-plus-social-logotype:hover {
+  transform: rotateY(180deg);
+}
+
+.flaticon-linkedin-button:hover {
+  transform: rotateY(180deg);
+}
+
+.flaticon-youtube-logotype:hover {
   transform: rotateY(180deg);
 }
 
