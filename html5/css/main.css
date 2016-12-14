@@ -120,11 +120,7 @@ body {
   font-weight: 500;
 }
 
-.flaticon-android-logo:before,
-.flaticon-apple-logo:before,
-.flaticon-windows-8:before {
-  color: #af9c93;
-}
+
 
 .icon-wrapper {
   display: -ms-flexbox;
@@ -153,10 +149,13 @@ body {
   background-color: #d4213d;
   cursor: pointer;
 }
-
-.icon-hover:hover:before {
+.icon-hover:before {
+  color: #af9c93;
+}
+.round-background:hover .icon-hover:before {
   color: #f4f4f4;
 }
+
 
 /* ====================================
  	triple icons section 
@@ -170,7 +169,7 @@ body {
 .wrapper {
   display: -ms-flexbox;
   display: flex;
-  width: 73.4375%;
+  width: calc(100% - 23%);
   margin: 0 auto;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
@@ -237,13 +236,12 @@ i.flaticon-earth {
 .form-section {
   height: 427px;
   background-color: #e3e3e3;
-  padding-top: 60px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-  padding-left: 13.8125%;
-  padding-right: 13.8125%;
+
+  padding: 60px 13.8125% 0;
 }
 
 .form {
@@ -287,9 +285,7 @@ i.flaticon-earth {
   font: 16px/1.625 Arial;
 }
 
-input[type="button"] {
-  background-color: #d4213d;
-}
+
 
 .vimeo {
   width: 500px;
@@ -414,10 +410,14 @@ input[type="button"] {
 
 .faces img {
   width: 50px;
+  margin: 0 auto;
+  display: block;
 }
 
 .photos li {
+  overflow: hidden;
   display: inline;
+  text-align: center;
 }
 
 .photos li:hover {
@@ -453,4 +453,23 @@ input[type="button"] {
   text-decoration: none;
   color: #848484;
   font: 16px/1.625 Arial;
+}
+
+.face-image {
+  position: relative;
+  overflow: hidden;
+}
+.face-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 100%;
+  background: rgba(212, 33, 61, 1);
+  opacity: 0;
+}
+.face-image:hover:before {
+  opacity: 0.6;
 }
