@@ -1,5 +1,5 @@
 /* ====================================
- 	icons
+  icons
 
  ======================================= */
 @font-face {
@@ -81,15 +81,22 @@
 }
 
 /* ====================================
- 	main css code
+  main css code
 
  ======================================= */
 body {
   background-color: #fff;
 }
 
+.container {
+  width: 75%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* ====================================
- 	feature section
+  feature section
 
  ======================================= */
 .feature {
@@ -108,7 +115,7 @@ body {
   margin-bottom: 65px;
 }
 
-.dot {
+.decor {
   color: #d4213d;
 }
 
@@ -119,8 +126,6 @@ body {
   line-height: 36px;
   font-weight: 500;
 }
-
-
 
 .icon-wrapper {
   display: -ms-flexbox;
@@ -133,9 +138,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
   margin-left: 16px;
@@ -149,19 +154,20 @@ body {
   background-color: #d4213d;
   cursor: pointer;
 }
+
 .icon-hover:before {
   color: #af9c93;
 }
+
 .round-background:hover .icon-hover:before {
   color: #f4f4f4;
 }
 
-
 /* ====================================
- 	triple icons section 
+  features icons section 
 
  ======================================= */
-.triple {
+.features {
   height: 335px;
   padding-top: 60px;
 }
@@ -172,9 +178,9 @@ body {
   width: calc(100% - 23%);
   margin: 0 auto;
   -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
+  flex-flow: row nowrap;
   -ms-flex-pack: justify;
-      justify-content: space-between;
+  justify-content: space-between;
 }
 
 .wrapper div {
@@ -190,11 +196,11 @@ body {
   background-color: #d4213d;
   border-radius: 50%;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .wrapper li {
@@ -202,9 +208,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
   -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
+  flex-flow: column nowrap;
 }
 
 .title {
@@ -225,28 +231,25 @@ i.flaticon-settings,
 i.flaticon-favorite,
 i.flaticon-earth {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 /* ====================================
- 	form section
+  newsletter section
 
  ======================================= */
-.form-section {
-  height: 427px;
+.newsletter {
   background-color: #e3e3e3;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row nowrap;
-      flex-flow: row nowrap;
-
-  padding: 60px 13.8125% 0;
+  flex-flow: row nowrap;
+  padding: 60px 13.8125% 50px;
 }
 
 .form {
   width: 539px;
-  height: 222px;
 }
 
 .input {
@@ -285,8 +288,6 @@ i.flaticon-earth {
   font: 16px/1.625 Arial;
 }
 
-
-
 .vimeo {
   width: 500px;
   height: 307px;
@@ -296,7 +297,7 @@ i.flaticon-earth {
 }
 
 /* ====================================
- 	get-in-touch section
+  get-in-touch section
 
  ======================================= */
 .get-in-touch {
@@ -304,9 +305,9 @@ i.flaticon-earth {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column nowrap;
-      flex-flow: column nowrap;
+  flex-flow: column nowrap;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   padding-bottom: 61px;
 }
 
@@ -421,8 +422,6 @@ i.flaticon-earth {
 }
 
 .photos li:hover {
-  -ms-transform: scale(1.3, 1.3);
-      transform: scale(1.3, 1.3);
   cursor: pointer;
 }
 
@@ -435,7 +434,7 @@ i.flaticon-earth {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
+  justify-content: center;
 }
 
 .footer-nav {
@@ -444,9 +443,9 @@ i.flaticon-earth {
   display: flex;
   width: 541px;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
 }
 
 .footer-nav li a {
@@ -459,6 +458,7 @@ i.flaticon-earth {
   position: relative;
   overflow: hidden;
 }
+
 .face-image:before {
   content: '';
   position: absolute;
@@ -467,9 +467,10 @@ i.flaticon-earth {
   right: 0;
   display: block;
   height: 100%;
-  background: rgba(212, 33, 61, 1);
+  background: #d4213d;
   opacity: 0;
 }
+
 .face-image:hover:before {
   opacity: 0.6;
 }
