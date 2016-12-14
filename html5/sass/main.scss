@@ -1,5 +1,5 @@
  /* ====================================
- 		icons
+ 	icons
 
  ======================================= */
 
@@ -42,8 +42,6 @@ font-style: normal;
 .flaticon-windows-8:before { content: "\f10a"; }
 .flaticon-youtube-logotype:before { content: "\f10b"; }
 
-
-
 .flaticon-earth:before,
 .flaticon-settings:before,
 .flaticon-favorite:before {
@@ -53,7 +51,7 @@ font-style: normal;
 }
 
  /* ====================================
- 		main css code
+ 	main css code
 
  ======================================= */
 
@@ -62,7 +60,7 @@ body {
 }
 
  /* ====================================
- 		feature section
+ 	feature section
 
  ======================================= */
 
@@ -97,7 +95,7 @@ body {
 
 .flaticon-android-logo:before,
 .flaticon-apple-logo:before,
-.flaticon-windows-8:before  {
+.flaticon-windows-8:before {
 	color: #af9c93;
 }
 
@@ -125,12 +123,12 @@ body {
 	cursor: pointer;
 }
 
-.icon-hover:hover:before  {
+.icon-hover:hover:before {
 	color: #f4f4f4;
 }
 
  /* ====================================
- 		triple icons section 
+ 	triple icons section 
 
  ======================================= */
 
@@ -194,7 +192,7 @@ i.flaticon-earth {
 }
 
  /* ====================================
- 		form section
+ 	form section
 
  ======================================= */
 
@@ -267,7 +265,7 @@ input[type="button"] {
 
 
 /* ====================================
- 		get-in-touch section
+ 	get-in-touch section
 
  ======================================= */
 
@@ -287,7 +285,7 @@ input[type="button"] {
 	margin-bottom: 30px;
 }
 
-.signature  {
+.signature {
 	color: #2e2e2e;
 	font: 18px/1.1111 Roboto, Arial, sans-serif;
 	margin-top: 0;
@@ -310,7 +308,6 @@ input[type="button"] {
 	display: flex;
 	width: 254px;
 	perspective: 1000;
-	// justify-content: space-between;
 }
 
 .flaticon-twitter-logo-button:hover {
@@ -355,7 +352,10 @@ input[type="button"] {
 
 /* carousel subsection
    ========================================================================== */
-
+.carousel {
+	display: block;
+	overflow: hidden;
+}
 
 .photos {
 	list-style-type: none;
@@ -371,8 +371,9 @@ input[type="button"] {
 	display: inline;
 }
 
+
 /* ==========================================================================
-                                    FOOTER
+    footer
    ========================================================================== */
 
 .footer {
