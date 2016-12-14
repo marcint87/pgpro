@@ -311,22 +311,28 @@ input[type="button"] {
 }
 
 .flaticon-twitter-logo-button:hover {
-	transform: rotateY(180deg);
+	transform: rotateY(360deg);
+	transition: .9s;
 }
  .flaticon-facebook-logo-button:hover {
-	transform: rotateY(180deg);
+	transform: rotateY(360deg);
+	transition: .9s;
 }
 .flaticon-pinterest-logo-button:hover {
-	transform: rotateY(180deg);
+	transform: rotateY(360deg);
+	transition: .9s;
 }
 .flaticon-google-plus-social-logotype:hover {
-	transform: rotateY(180deg);
+	transform: rotateY(360deg);
+	transition: .9s;
 }
  .flaticon-linkedin-button:hover {
-	transform: rotateY(180deg);
+	transform: rotateY(360deg);
+	transition: .9s;
 }
 .flaticon-youtube-logotype:hover {
-	transform: rotateY(180deg);
+	transform: rotateY(360deg);
+	transition: .9s;
 }
 
 .icon-social {
