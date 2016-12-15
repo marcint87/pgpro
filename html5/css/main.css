@@ -88,24 +88,63 @@ body {
   background-color: #fff;
 }
 
+/* styles reset
+
+======================================= */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-row {
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+}
+
+.flex-column {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  max-width: 1200px;
+}
+
+.flex-item-width {
+  width: 1200px;
+}
+
 /* ====================================
   feature section
 
  ======================================= */
 .feature {
   border-top: 10px solid #d4213d;
-  height: 600px;
-  background: url(../img/background.jpg) 0% 0%/100% fixed no-repeat;
-  padding-left: 20.5625%;
+  height: 610px;
+  background: url(../img/background.jpg) 0% 0%/100% no-repeat;
+  background-clip: border-box;
+}
+
+.feature-wrapper {
+  padding-left: 128px;
+  padding-top: 195px;
 }
 
 .feature-title {
   font-family: "Gochi Hand", cursive;
   font-size: 60px;
+  font-weight: 400;
   color: #fff;
   line-height: 20px;
-  margin-top: 180px;
-  margin-bottom: 65px;
+  margin-top: 6px;
 }
 
 .decor {
@@ -118,11 +157,13 @@ body {
   color: #fff;
   line-height: 36px;
   font-weight: 500;
+  margin: 58px 0 20px 0;
 }
 
 .icon-wrapper {
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
 }
 
 .round-background {
@@ -131,9 +172,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-  justify-content: center;
+      justify-content: center;
   -ms-flex-align: center;
-  align-items: center;
+      align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
   margin-left: 16px;
@@ -168,12 +209,13 @@ body {
 .wrapper {
   display: -ms-flexbox;
   display: flex;
-  width: calc(100% - 23%);
+  width: 100%;
   margin: 0 auto;
+  padding: 0;
   -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+      flex-flow: row nowrap;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+      justify-content: space-between;
 }
 
 .features-icon-cirlce {
@@ -184,11 +226,11 @@ body {
   background-color: #d4213d;
   border-radius: 50%;
   -ms-flex-pack: center;
-  justify-content: center;
+      justify-content: center;
   -ms-flex-align: center;
-  align-items: center;
+      align-items: center;
   -ms-flex-item-align: center;
-  align-self: center;
+      align-self: center;
 }
 
 .feature-item {
@@ -196,9 +238,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-  justify-content: center;
+      justify-content: center;
   -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  width: 310px;
 }
 
 .title {
@@ -219,8 +262,8 @@ i.flaticon-settings,
 i.flaticon-favorite,
 i.flaticon-earth {
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /* ====================================
@@ -229,15 +272,12 @@ i.flaticon-earth {
  ======================================= */
 .newsletter {
   background-color: #e3e3e3;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  padding: 60px 13.8125% 50px;
 }
 
 .form {
   width: 539px;
+  display: inline-block;
+  margin: 60px 0 0 10PX;
 }
 
 .input {
@@ -247,7 +287,7 @@ i.flaticon-earth {
   width: 305px;
   height: 56px;
   box-sizing: border-box;
-  margin-right: -2px;
+  margin: 23px -2px 0 0;
 }
 
 .button {
@@ -259,7 +299,7 @@ i.flaticon-earth {
   box-sizing: border-box;
   border-radius: 0 10px 10px 0;
   color: #fff;
-  font: 22px/0.8181 "Myriad Pro", Arial, sans-serif;
+  font: 400 22px/0.8181 "Myriad Pro", Arial, sans-serif;
 }
 
 .title-form {
@@ -272,14 +312,14 @@ i.flaticon-earth {
 .text-form {
   color: #848484;
   text-align: left;
-  margin-top: 31px;
+  margin-top: 21px;
   font: 16px/1.625 Arial;
 }
 
 .vimeo {
   width: 500px;
   height: 307px;
-  margin-left: 8.6875%;
+  margin: 60px 0  60px 11.688%;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -293,37 +333,35 @@ i.flaticon-earth {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
+      flex-flow: column nowrap;
   -ms-flex-align: center;
-  align-items: center;
+      align-items: center;
   padding-bottom: 61px;
 }
 
 .testimony-quote {
   font: italic 18px/1.6666 Arial, Helvetica, sans-serif;
   color: #848484;
-  width: 55%;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  width: 880px;
+  margin: 51px auto 18px auto;
 }
 
 .signature {
   color: #2e2e2e;
-  font: 18px/1.1111 Roboto, Arial, sans-serif;
-  margin-top: 0;
+  font: 400 18px/1.1111111 Roboto, Arial, sans-serif;
+  margin: 0 auto 0 auto;
 }
 
 .text-say-hi {
-  margin-top: 60px;
-  margin-bottom: 0px;
+  margin: 60px auto 0 auto;
   font: 24px/1 Roboto, Arial, sans-serif;
   color: #000;
 }
 
 .get-in-touch-para {
-  font: 16px/1.625 HelveticaNeue, Arial, sans-serif;
+  font: 400 16px/1.625 'Myriad Pro', Arial, sans-serif;
   color: #848484;
-  margin-top: 29px;
+  margin: 29px auto 0 auto;
 }
 
 /* social icons subsection
@@ -332,53 +370,34 @@ i.flaticon-earth {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
-  width: 254px;
+  width: 305px;
   height: 42px;
-  perspective: 1000;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.social-icon-item:hover .flaticon-twitter-logo-button {
-  transform: rotateY(360deg);
-  transition: .9s;
-}
-
-.social-icon-item:hover .flaticon-facebook-logo-button {
-  transform: rotateY(360deg);
-  transition: .9s;
-}
-
-.social-icon-item:hover .flaticon-pinterest-logo-button {
-  transform: rotateY(360deg);
-  transition: .9s;
-}
-
-.social-icon-item:hover .flaticon-google-plus-social-logotype {
-  transform: rotateY(360deg);
-  transition: .9s;
-}
-
-.social-icon-item:hover .flaticon-linkedin-button {
-  transform: rotateY(360deg);
-  transition: .9s;
-}
-
-.social-icon-item:hover .flaticon-youtube-logotype {
-  transform: rotateY(360deg);
-  transition: .9s;
+.social-icon-item {
+  paddinng: 0 auto;
+  width: 50px;
+  height: 50px;
 }
 
 .icon-social {
   color: #848484;
   margin-left: 10px;
-  margin-bottom: 61px;
   text-decoration: none;
   display: block;
   width: 100%;
   height: 100%;
+  perspective: 1000px;
+  transition: .9s;
+}
+
+.icon-social:hover {
+  transform: rotateY(360deg);
 }
 
 .text-hide {
-  text-indent: -9999em;
   position: absolute;
   left: -9999em;
 }
@@ -401,6 +420,7 @@ i.flaticon-earth {
 .faces {
   width: 900px;
   position: relative;
+  margin: 0 auto;
 }
 
 .photos {
@@ -426,27 +446,15 @@ i.flaticon-earth {
   cursor: pointer;
 }
 
-/* ==========================================================================
-    footer
-   ========================================================================== */
-.footer {
-  height: 130px;
-  background-color: #e3e3e3;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .footer-nav {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
   width: 541px;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -ms-flex-align: center;
-  align-items: center;
+      align-items: center;
 }
 
 .footer-nav-link {
@@ -474,4 +482,16 @@ i.flaticon-earth {
 
 .face-image:hover:before {
   opacity: 0.6;
+}
+
+/* ==========================================================================
+    footer
+   ========================================================================== */
+.footer {
+  height: 130px;
+  background-color: #e3e3e3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
