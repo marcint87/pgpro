@@ -328,7 +328,7 @@ i.flaticon-earth {
   font: italic 18px/1.6666 Arial, Helvetica, sans-serif;
   text-align: center;
   color: #848484;
-  width: 100%;
+  width: 884px;
   margin: 51px auto 0 auto;
 }
 
@@ -356,22 +356,23 @@ i.flaticon-earth {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  width: 305px;
+  // width: 305px;
+  width: 254px;
   height: 50px;
   margin: 17px auto 0 auto;
   padding: 0;
   
 }
 .social-icon-item {
-  width: 42px;
-  height: 42px;
+  width: 34px;
+  height: 34px;
 }
 .icon-social {
   color: #848484;
   text-decoration: none;
   display: block;
-  width: 42px;
-  height: 42px;
+  width: 34px;
+  height: 34px;
   perspective: 1000px;
   transition: .9s;
 }
@@ -380,9 +381,10 @@ i.flaticon-earth {
   color: #df596e;
 }
 .text-hide {
-  // text-indent: -9999em;
-  position: absolute;
-  left: -9999em;
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .flaticon-twitter-logo-button:before,
@@ -391,7 +393,8 @@ i.flaticon-earth {
 .flaticon-google-plus-social-logotype:before,
 .flaticon-linkedin-button:before,
 .flaticon-youtube-logotype:before {
-  font-size: 40px;
+  // font-size: 40px;
+   font-size: 34px;
 }
 
 /* carousel subsection
