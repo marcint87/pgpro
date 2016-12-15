@@ -89,12 +89,8 @@ body {
 }
 
 .container {
-  width: 75%;
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
+  
 }
-
 /* ====================================
   feature section
 
@@ -331,40 +327,43 @@ i.flaticon-earth {
   color: #848484;
   margin-top: 29px;
 }
+/* social icons subsection
+   ========================================================================== */
 
 .social-icons-wrapper {
+  list-style-type: none;
   display: -ms-flexbox;
   display: flex;
   width: 254px;
+  height: 42px;
   perspective: 1000;
 }
-
-.flaticon-twitter-logo-button:hover {
+.social-icon-item:hover .flaticon-twitter-logo-button {
   transform: rotateY(360deg);
   transition: .9s;
 }
 
-.flaticon-facebook-logo-button:hover {
+.social-icon-item:hover .flaticon-facebook-logo-button {
   transform: rotateY(360deg);
   transition: .9s;
 }
 
-.flaticon-pinterest-logo-button:hover {
+.social-icon-item:hover .flaticon-pinterest-logo-button {
   transform: rotateY(360deg);
   transition: .9s;
 }
 
-.flaticon-google-plus-social-logotype:hover {
+.social-icon-item:hover .flaticon-google-plus-social-logotype {
   transform: rotateY(360deg);
   transition: .9s;
 }
 
-.flaticon-linkedin-button:hover {
+.social-icon-item:hover .flaticon-linkedin-button {
   transform: rotateY(360deg);
   transition: .9s;
 }
 
-.flaticon-youtube-logotype:hover {
+.social-icon-item:hover .flaticon-youtube-logotype {
   transform: rotateY(360deg);
   transition: .9s;
 }
@@ -373,7 +372,16 @@ i.flaticon-earth {
   color: #848484;
   margin-left: 10px;
   margin-bottom: 61px;
-  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.text-hide {
+  text-indent: -9999em;
+  position: absolute;
+  left: -9999em;
 }
 
 .icon-social:hover {
