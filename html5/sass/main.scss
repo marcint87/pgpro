@@ -101,7 +101,7 @@ body {
 
 .container {
   max-width: 1200px;
-  height: 100%;
+  // height: 100%; switched off 
   margin: 0 auto;
   display: flex;
 }
@@ -209,17 +209,6 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
 }
-.features-icon-cirlce {
-  display: flex;
-  width: 98px;
-  height: 98px;
-  background-color: #d4213d;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-}
-
 .feature-item {
   list-style: none;
   display: flex;
@@ -228,10 +217,25 @@ body {
   width: 310px;
 }
 
+.features-icon-cirlce {
+  display: flex;
+  width: 98px;
+  height: 98px;
+  // background-color: #d4213d;
+  background-color: green;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+
+
 .title {
   color: #222222;
   text-align: center;
   margin-top: 31px;
+  padding-left: 20px;
   font: 22px / 18px 'Roboto', Arial, sans-serif;
 }
 
@@ -263,13 +267,14 @@ i.flaticon-earth {
 }
 
 .input {
-  padding: 15px 21px;
+  padding: 0 21px 0 23px;
   border: 1px solid #848484;
   border-radius: 10px 0 0 10px;
   width: 305px;
   height: 56px;
   box-sizing: border-box;
   margin: 23px -2px 0 0;
+  font: 400 18px/1 Roboto, Arial, sans-serif;
 }
 
 .button {
@@ -278,6 +283,7 @@ i.flaticon-earth {
   background-color: #d4213d;
   border: none;
   margin-left: -3px;
+  padding-right: 12px;
   box-sizing: border-box;
   border-radius: 0 10px 10px 0;
   color: #fff;
@@ -320,20 +326,20 @@ i.flaticon-earth {
 
 .testimony-quote {
   font: italic 18px/1.6666 Arial, Helvetica, sans-serif;
+  text-align: center;
   color: #848484;
-  // width: 55%;
-  width: 880px;
-  margin: 51px auto 18px auto;
+  width: 100%;
+  margin: 51px auto 0 auto;
 }
 
 .signature {
   color: #2e2e2e;
   font: 400 18px/1.1111111 Roboto, Arial, sans-serif;
-  margin: 0 auto 0 auto;
+  margin: 18px auto 22px auto;
 }
 
 .text-say-hi {
-  margin: 60px auto 0 auto;
+  margin: 54px auto 0 auto;
   font: 24px/1 Roboto, Arial, sans-serif;
   color: #000;
 }
@@ -341,7 +347,7 @@ i.flaticon-earth {
 .get-in-touch-para {
   font: 400 16px/1.625 'Myriad Pro', Arial, sans-serif;
   color: #848484;
-  margin: 29px auto 0 auto;
+  margin: 18px auto 0 auto;
 }
 /* social icons subsection
    ========================================================================== */
@@ -349,46 +355,34 @@ i.flaticon-earth {
 .social-icons-wrapper {
   list-style-type: none;
   display: flex;
+  justify-content: space-between;
   width: 305px;
-  height: 42px;
-  margin: 0 auto;
+  height: 50px;
+  margin: 17px auto 0 auto;
   padding: 0;
   
 }
-// .social-icon-item:hover .flaticon-twitter-logo-button {
-//   transform: rotateY(360deg);
-//   transition: .9s;
-// }
 .social-icon-item {
-  paddinng: 0 auto;
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
 }
-
-
 .icon-social {
   color: #848484;
-  margin-left: 10px;
-  // margin-bottom: 61px;
   text-decoration: none;
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 42px;
+  height: 42px;
   perspective: 1000px;
   transition: .9s;
 }
 .icon-social:hover {
   transform: rotateY(360deg);
+  color: #df596e;
 }
-
 .text-hide {
   // text-indent: -9999em;
   position: absolute;
   left: -9999em;
-}
-
-.icon-social:hover {
-  color: #df596e;
 }
 
 .flaticon-twitter-logo-button:before,
@@ -405,7 +399,7 @@ i.flaticon-earth {
 .faces {
   width: 900px;
   position: relative;
-  margin: 0 auto;
+  margin: 5px auto 0 auto;
 }
 
 .photos {
@@ -437,11 +431,17 @@ i.flaticon-earth {
   justify-content: space-around;
   align-items: center;
 }
+.footer-nav-item {
+  margin-left: 37px;
+}
+.footer-nav-item:first-of-type {
+  margin-left: 0;
+}
 
 .footer-nav-link {
   text-decoration: none;
   color: #848484;
-  font: 16px/1.625 Arial;
+  font: 400 16px/1.625 Arial;
 }
 
 .face-image {
