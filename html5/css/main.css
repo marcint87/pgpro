@@ -284,10 +284,14 @@ i.flaticon-earth {
   margin: 60px 0 0 10PX;
 }
 
+.form-section {
+  position: relative;
+}
+
 .input {
   padding: 0 21px 0 23px;
   border: 1px solid #848484;
-  border-radius: 10px 0 0 10px;
+  border-radius: 15px 0 0 15px;
   width: 305px;
   height: 56px;
   box-sizing: border-box;
@@ -296,14 +300,16 @@ i.flaticon-earth {
 }
 
 .button {
+  position: absolute;
+  bottom: 0px;
   height: 56px;
   width: 141px;
   background-color: #d4213d;
   border: none;
-  margin-left: -3px;
+  margin-left: 1px;
   padding-right: 12px;
   box-sizing: border-box;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 15px 15px 0;
   color: #fff;
   font: 400 22px/0.8181 "Myriad Pro", Arial, sans-serif;
 }
