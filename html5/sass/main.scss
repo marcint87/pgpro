@@ -23,55 +23,42 @@
   font-size: 20px;
   font-style: normal;
 }
-
 .flaticon-android-logo:before {
   content: "\f100";
 }
-
 .flaticon-apple-logo:before {
   content: "\f101";
 }
-
 .flaticon-earth:before {
   content: "\f102";
 }
-
 .flaticon-facebook-logo-button:before {
   content: "\f103";
 }
-
 .flaticon-favorite:before {
   content: "\f104";
 }
-
 .flaticon-google-plus-social-logotype:before {
   content: "\f105";
 }
-
 .flaticon-linkedin-button:before {
   content: "\f106";
 }
-
 .flaticon-pinterest-logo-button:before {
   content: "\f107";
 }
-
 .flaticon-settings:before {
   content: "\f108";
 }
-
 .flaticon-twitter-logo-button:before {
   content: "\f109";
 }
-
 .flaticon-windows-8:before {
   content: "\f10a";
 }
-
 .flaticon-youtube-logotype:before {
   content: "\f10b";
 }
-
 .flaticon-earth:before,
 .flaticon-settings:before,
 .flaticon-favorite:before {
@@ -79,7 +66,6 @@
   text-align: center;
   color: #fff;
 }
-
 /* ====================================
   main css code
 
@@ -88,17 +74,14 @@ body {
   background-color: #fff;
 }
 
-
 /* styles reset
 
 ======================================= */
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
-
 .container {
   max-width: 1200px;
   // height: 100%; switched off 
@@ -108,12 +91,10 @@ body {
 .flex-row {
   flex-flow: row nowrap;
 }
-
 .flex-column {
   flex-direction: column;
   justify-content: center;
 }
-
 .flex-item-width {
   width: 1200px;
 }
@@ -126,13 +107,11 @@ body {
   height: 610px;
   background: url(../img/background.jpg) 0% 0%/100% no-repeat;
   background-clip: border-box;
-
 }
 .feature-wrapper {
   padding-left: 128px;
   padding-top: 195px;
 }
-
 .feature-title {
   font-family: "Gochi Hand", cursive;
   font-size: 60px;
@@ -142,11 +121,9 @@ body {
   margin-top: 6px;
   margin-left: -2px;
 }
-
 .decor {
   color: #d4213d;
 }
-
 .feature-description {
   font-family: "Roboto", Arial, sans-serif;
   font-size: 24px;
@@ -155,12 +132,10 @@ body {
   font-weight: 500;
   margin: 57px 0 20px 1px;
 }
-
 .icon-wrapper {
   display: flex;
   padding: 0;
 }
-
 .round-background {
   width: 52px;
   height: 52px;
@@ -171,49 +146,40 @@ body {
   border-radius: 50%;
   margin-left: 16px;
 }
-
 .round-background:first-of-type {
   margin-left: 0;
 }
-
 .round-background:hover {
   background-color: #d4213d;
   cursor: pointer;
 }
-
 .icon-hover:before {
   color: #af9c93;
 }
-
 .round-background:hover .icon-hover:before {
   color: #f4f4f4;
 }
-
 /* ====================================
   features icons section 
 
  ======================================= */
 .features {
   height: 335px;
-  // padding-top: 60px;
   display: flex;
   align-items: center;
 }
-
 .wrapper {
   display: flex;
   width: 100%;
   margin: 0 auto;
   padding: 0;
   flex-flow: row nowrap;
-  // justify-content: space-between;
 }
 .feature-item {
   list-style: none;
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
-  // width: 355px; changes below
   width: 314px;
   margin-left: 123px;
 }
@@ -224,8 +190,7 @@ body {
   display: flex;
   width: 98px;
   height: 98px;
-  // background-color: #d4213d; original color
-  background-color: green;
+  background-color: #d4213d;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -248,7 +213,6 @@ i.flaticon-favorite,
 i.flaticon-earth {
   align-self: center;
 }
-
 /* ====================================
   newsletter section
 
@@ -302,7 +266,6 @@ i.flaticon-earth {
   border-radius: 10px;
   overflow: hidden;
 }
-
 /* ====================================
   testimony section
 
@@ -341,17 +304,14 @@ i.flaticon-earth {
 }
 /* social icons subsection
    ========================================================================== */
-
 .social-icons-wrapper {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  // width: 305px;
   width: 254px;
   height: 50px;
   margin: 19px auto 0 auto;
   padding: 0;
-  
 }
 .social-icon-item {
   width: 34px;
@@ -376,7 +336,6 @@ i.flaticon-earth {
   height: 0;
   overflow: hidden;
 }
-
 .flaticon-twitter-logo-button:before,
 .flaticon-facebook-logo-button:before,
 .flaticon-pinterest-logo-button:before,
@@ -385,7 +344,6 @@ i.flaticon-earth {
 .flaticon-youtube-logotype:before {
    font-size: 34px;
 }
-
 /* carousel subsection
    ========================================================================== */
 .faces {
@@ -399,17 +357,13 @@ i.flaticon-earth {
   margin-bottom: 0;
   padding: 0;
 }
-
 .faces img {
   width: 50px;
   margin: 0 auto;
   display: block;
-
-  //  changes
   width: 50px;
   height: 50px;
 }
-
 .photos li {
   overflow: hidden;
   display: inline;
@@ -437,7 +391,6 @@ i.flaticon-earth {
 .face-image:hover:before {
   opacity: 0.6;
 }
-
 /* ==========================================================================
     footer
    ========================================================================== */
