@@ -112,9 +112,8 @@ body {
 .flex-column {
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  max-width: 1200px;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .flex-item-width {
@@ -144,6 +143,7 @@ body {
   color: #fff;
   line-height: 20px;
   margin-top: 6px;
+  margin-left: -2px;
 }
 
 .decor {
@@ -156,7 +156,7 @@ body {
   color: #fff;
   line-height: 36px;
   font-weight: 500;
-  margin: 58px 0 20px 0;
+  margin: 57px 0 20px 1px;
 }
 
 .icon-wrapper {
@@ -202,7 +202,10 @@ body {
  ======================================= */
 .features {
   height: 335px;
-  padding-top: 60px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .wrapper {
@@ -213,8 +216,6 @@ body {
   padding: 0;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
 }
 
 .feature-item {
@@ -225,7 +226,12 @@ body {
       justify-content: center;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
-  width: 310px;
+  width: 314px;
+  margin-left: 123px;
+}
+
+.feature-item:first-of-type {
+  margin-left: 0;
 }
 
 .features-icon-cirlce {
@@ -247,7 +253,6 @@ body {
   color: #222222;
   text-align: center;
   margin-top: 31px;
-  padding-left: 20px;
   font: 22px / 18px 'Roboto', Arial, sans-serif;
 }
 
@@ -275,7 +280,7 @@ i.flaticon-earth {
 }
 
 .form {
-  width: 539px;
+  width: 541px;
   display: inline-block;
   margin: 60px 0 0 10PX;
 }
@@ -307,7 +312,7 @@ i.flaticon-earth {
 .title-form {
   color: #222222;
   text-align: left;
-  margin-top: 0;
+  margin: 0 0 0 1px;
   font: 22px/0.818181 'Roboto';
 }
 
@@ -321,7 +326,7 @@ i.flaticon-earth {
 .vimeo {
   width: 500px;
   height: 307px;
-  margin: 60px 0  60px 11.688%;
+  margin: 60px 0  60px 138px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -353,18 +358,21 @@ i.flaticon-earth {
   color: #2e2e2e;
   font: 400 18px/1.1111111 Roboto, Arial, sans-serif;
   margin: 18px auto 22px auto;
+  text-align: center;
 }
 
 .text-say-hi {
   margin: 54px auto 0 auto;
   font: 24px/1 Roboto, Arial, sans-serif;
   color: #000;
+  text-align: center;
 }
 
 .get-in-touch-para {
   font: 400 16px/1.625 'Myriad Pro', Arial, sans-serif;
   color: #848484;
   margin: 18px auto 0 auto;
+  text-align: center;
 }
 
 /* social icons subsection
@@ -377,7 +385,7 @@ i.flaticon-earth {
       justify-content: space-between;
   width: 254px;
   height: 50px;
-  margin: 17px auto 0 auto;
+  margin: 19px auto 0 auto;
   padding: 0;
 }
 
@@ -436,6 +444,8 @@ i.flaticon-earth {
   width: 50px;
   margin: 0 auto;
   display: block;
+  width: 50px;
+  height: 50px;
 }
 
 .photos li {
@@ -448,11 +458,45 @@ i.flaticon-earth {
   cursor: pointer;
 }
 
+.face-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.face-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 5px;
+  right: 0;
+  display: block;
+  height: 100%;
+  background: #d4213d;
+  opacity: 0;
+  width: 50px;
+}
+
+.face-image:hover:before {
+  opacity: 0.6;
+}
+
+/* ==========================================================================
+    footer
+   ========================================================================== */
+.footer {
+  height: 130px;
+  background-color: #e3e3e3;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
 .footer-nav {
   list-style-type: none;
   display: -ms-flexbox;
   display: flex;
-  width: 541px;
+  width: 550px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
@@ -471,37 +515,7 @@ i.flaticon-earth {
   text-decoration: none;
   color: #848484;
   font: 400 16px/1.625 Arial;
-}
-
-.face-image {
-  position: relative;
-  overflow: hidden;
-}
-
-.face-image:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   display: block;
+  width: 100%;
   height: 100%;
-  background: #d4213d;
-  opacity: 0;
-}
-
-.face-image:hover:before {
-  opacity: 0.6;
-}
-
-/* ==========================================================================
-    footer
-   ========================================================================== */
-.footer {
-  height: 130px;
-  background-color: #e3e3e3;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
 }

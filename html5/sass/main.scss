@@ -111,8 +111,7 @@ body {
 
 .flex-column {
   flex-direction: column;
-  justify-content: flex-end;
-  max-width: 1200px;
+  justify-content: center;
 }
 
 .flex-item-width {
@@ -142,6 +141,7 @@ body {
   color: #fff;
   line-height: 20px;
   margin-top: 6px;
+  margin-left: -2px;
 }
 
 .decor {
@@ -154,7 +154,7 @@ body {
   color: #fff;
   line-height: 36px;
   font-weight: 500;
-  margin: 58px 0 20px 0;
+  margin: 57px 0 20px 1px;
 }
 
 .icon-wrapper {
@@ -196,56 +196,54 @@ body {
  ======================================= */
 .features {
   height: 335px;
-  padding-top: 60px;
-
+  // padding-top: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .wrapper {
   display: flex;
-  // width: calc(100% - 23%);
   width: 100%;
   margin: 0 auto;
   padding: 0;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 .feature-item {
   list-style: none;
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
-  width: 310px;
+  // width: 355px; changes below
+  width: 314px;
+  margin-left: 123px;
 }
-
+.feature-item:first-of-type {
+  margin-left: 0;
+}
 .features-icon-cirlce {
   display: flex;
   width: 98px;
   height: 98px;
-  // background-color: #d4213d;
+  // background-color: #d4213d; original color
   background-color: green;
   border-radius: 50%;
   justify-content: center;
   align-items: center;
   align-self: center;
 }
-
-
-
 .title {
   color: #222222;
   text-align: center;
   margin-top: 31px;
-  padding-left: 20px;
   font: 22px / 18px 'Roboto', Arial, sans-serif;
 }
-
 .text {
   color: #848484;
   text-align: center;
   margin-top: 31px;
   font: 16px / 26px  Arial, sans-serif;
 }
-
 i.flaticon-settings,
 i.flaticon-favorite,
 i.flaticon-earth {
@@ -259,13 +257,11 @@ i.flaticon-earth {
 .newsletter {
   background-color: #e3e3e3;
 }
-
 .form {
-  width: 539px;
+  width: 541px;
   display: inline-block;
   margin: 60px 0 0 10PX;
 }
-
 .input {
   padding: 0 21px 0 23px;
   border: 1px solid #848484;
@@ -276,7 +272,6 @@ i.flaticon-earth {
   margin: 23px -2px 0 0;
   font: 400 18px/1 Roboto, Arial, sans-serif;
 }
-
 .button {
   height: 56px;
   width: 141px;
@@ -289,25 +284,22 @@ i.flaticon-earth {
   color: #fff;
   font: 400 22px/0.8181 "Myriad Pro", Arial, sans-serif;
 }
-
 .title-form {
   color: #222222;
   text-align: left;
-  margin-top: 0;
+  margin: 0 0 0 1px;
   font: 22px/0.818181 'Roboto';
 }
-
 .text-form {
   color: #848484;
   text-align: left;
   margin-top: 21px;
   font: 16px/1.625 Arial;
 }
-
 .vimeo {
   width: 500px;
   height: 307px;
-  margin: 60px 0  60px 11.688%;
+  margin: 60px 0  60px 138px;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -323,7 +315,6 @@ i.flaticon-earth {
   align-items: center;
   padding-bottom: 61px;
 }
-
 .testimony-quote {
   font: italic 18px/1.6666 Arial, Helvetica, sans-serif;
   text-align: center;
@@ -331,23 +322,23 @@ i.flaticon-earth {
   width: 884px;
   margin: 51px auto 0 auto;
 }
-
 .signature {
   color: #2e2e2e;
   font: 400 18px/1.1111111 Roboto, Arial, sans-serif;
   margin: 18px auto 22px auto;
+  text-align: center;
 }
-
 .text-say-hi {
   margin: 54px auto 0 auto;
   font: 24px/1 Roboto, Arial, sans-serif;
   color: #000;
+  text-align: center;
 }
-
 .get-in-touch-para {
   font: 400 16px/1.625 'Myriad Pro', Arial, sans-serif;
   color: #848484;
   margin: 18px auto 0 auto;
+  text-align: center;
 }
 /* social icons subsection
    ========================================================================== */
@@ -359,7 +350,7 @@ i.flaticon-earth {
   // width: 305px;
   width: 254px;
   height: 50px;
-  margin: 17px auto 0 auto;
+  margin: 19px auto 0 auto;
   padding: 0;
   
 }
@@ -393,7 +384,6 @@ i.flaticon-earth {
 .flaticon-google-plus-social-logotype:before,
 .flaticon-linkedin-button:before,
 .flaticon-youtube-logotype:before {
-  // font-size: 40px;
    font-size: 34px;
 }
 
@@ -404,7 +394,6 @@ i.flaticon-earth {
   position: relative;
   margin: 5px auto 0 auto;
 }
-
 .photos {
   list-style-type: none;
   margin-top: 0;
@@ -416,6 +405,10 @@ i.flaticon-earth {
   width: 50px;
   margin: 0 auto;
   display: block;
+
+  //  changes
+  width: 50px;
+  height: 50px;
 }
 
 .photos li {
@@ -423,47 +416,25 @@ i.flaticon-earth {
   display: inline;
   text-align: center;
 }
-
 .photos li:hover {
   cursor: pointer;
 }
-.footer-nav {
-  list-style-type: none;
-  display: flex;
-  width: 541px;
-  justify-content: space-around;
-  align-items: center;
-}
-.footer-nav-item {
-  margin-left: 37px;
-}
-.footer-nav-item:first-of-type {
-  margin-left: 0;
-}
-
-.footer-nav-link {
-  text-decoration: none;
-  color: #848484;
-  font: 400 16px/1.625 Arial;
-}
-
 .face-image {
   position: relative;
   overflow: hidden;
 }
-
 .face-image:before {
   content: '';
   position: absolute;
   top: 0;
-  left: 0;
+  left: 5px;
   right: 0;
   display: block;
   height: 100%;
   background: #d4213d;
   opacity: 0;
+  width: 50px;
 }
-
 .face-image:hover:before {
   opacity: 0.6;
 }
@@ -476,4 +447,25 @@ i.flaticon-earth {
   background-color: #e3e3e3;
   display: flex;
   justify-content: center;
+}
+.footer-nav {
+  list-style-type: none;
+  display: flex;
+  width: 550px;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-nav-item {
+  margin-left: 37px;
+}
+.footer-nav-item:first-of-type {
+  margin-left: 0;
+}
+.footer-nav-link {
+  text-decoration: none;
+  color: #848484;
+  font: 400 16px/1.625 Arial;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
