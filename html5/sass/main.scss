@@ -84,7 +84,6 @@ body {
 }
 .container {
   max-width: 1200px;
-  // height: 100%; switched off 
   margin: 0 auto;
   display: flex;
 }
@@ -102,34 +101,25 @@ body {
   feature section
  ======================================= */
 .feature {
-  // border fixed disabled
   border-top: 10px solid #d4213d;
   height: 610px;
   background: url(../img/background.jpg) 0% 0%/100% no-repeat;
   background-clip: border-box;
 }
 .feature-wrapper {
-  padding-left: 128px;
-  padding-top: 195px;
+  padding: 195px 0 0 128px;
 }
 .feature-title {
-  font-family: "Gochi Hand", cursive;
-  font-size: 60px;
-  font-weight: 400;
+  font: 400 60px/0.3333333 "Gochi Hand", cursive;
   color: #fff;
-  line-height: 20px;
-  margin-top: 6px;
-  margin-left: -2px;
+  margin: 6px 0 0 -2px;
 }
 .decor {
   color: #d4213d;
 }
 .feature-description {
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 24px;
+  font: 500 24px/1.5 "Roboto", Arial, sans-serif;
   color: #fff;
-  line-height: 36px;
-  font-weight: 500;
   margin: 57px 0 20px 1px;
 }
 .icon-wrapper {
@@ -170,64 +160,54 @@ body {
 }
 .wrapper {
   display: flex;
+  flex-flow: row nowrap;
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  flex-flow: row nowrap;
 }
 .feature-item {
-  list-style: none;
   display: flex;
   justify-content: flex-start;
   flex-flow: column nowrap;
   width: 314px;
   height: 225px;
   margin-left: 123px;
+  list-style: none;
 }
 .feature-item:first-of-type {
   margin-left: 0;
 }
 .features-icon-cirlce {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
   width: 98px;
   height: 98px;
   background-color: #d4213d;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
 }
-
-// added new class in hmtl to position icon ########
 .gear-position {
-    margin-top: 5px;
-    margin-left: 9px;
-    margin-bottom: 31px;
-
+  margin: 5px 0 31px 9px;
 }
 .star-position {
- margin-top: 5px;
-  margin-left: -5px;
-  margin-bottom: 31px;
+  margin: 5px 0 31px -5px;
 }
 
 .planet-position {
-margin-top: 5px;
-margin-left: -18px;
-margin-bottom: 31px;
+  margin: 5px 0 31px -18px;
 }
-// end of position changes ###########
 .title {
-  color: #222222;
-  text-align: center;
   margin-top: 0;
   margin-bottom: 21px;
   font: 22px / 18px 'Roboto', Arial, sans-serif;
+  text-align: center;
+  color: #222222;
 }
 .text {
-  color: #848484;
-  text-align: center;
   font: 16px / 26px  Arial, sans-serif;
+  text-align: center;
+  color: #848484;
 }
 i.flaticon-settings,
 i.flaticon-favorite,
@@ -251,49 +231,46 @@ i.flaticon-earth {
 .form {
   width: 541px;
   display: inline-block;
-  margin: 60px 0 0 10PX;
+  margin: 60px 0 0 10px;
 }
 .form-section {
   position: relative;
 }
 .input {
+  font: 400 18px/1 Roboto, Arial, sans-serif;
   padding: 0 21px 0 23px;
+  margin: 23px -2px 0 0;
   border: 1px solid #848484;
   border-radius: 15px 0 0 15px;
   width: 305px;
   height: 56px;
   box-sizing: border-box;
-  margin: 23px -2px 0 0;
-  font: 400 18px/1 Roboto, Arial, sans-serif;
 }
 .button {
-  position: absolute;
-  bottom: 0px;
   height: 56px;
   width: 141px;
+  position: absolute;
+  bottom: 0px;
+  padding: 6px 11px 0 0;
+  margin-left: 1px;
+  box-sizing: border-box;
   background-color: #d4213d;
   border: none;
-  margin-left: 1px;
-  padding-right: 12px;
-  box-sizing: border-box;
   border-radius: 0 15px 15px 0;
-  color: #fff;
   font: 400 22px/0.8181 "Myriad Pro", Arial, sans-serif;
-
-  padding-right: 11px;
-  padding-top: 6px;
+  color: #fff;
 }
 .title-form {
+  font: 22px/0.818181 'Roboto';
   color: #222222;
   text-align: left;
   margin: 0 0 0 1px;
-  font: 22px/0.818181 'Roboto';
 }
 .text-form {
+  font: 16px/1.625 Arial;
   color: #848484;
   text-align: left;
   margin-top: 21px;
-  font: 16px/1.625 Arial;
 }
 .vimeo {
   width: 500px;
@@ -307,30 +284,30 @@ i.flaticon-earth {
 
  ======================================= */
 .testimony {
-  height: 466px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  height: 466px;
   padding-bottom: 61px;
 }
 .testimony-quote {
   font: italic 18px/1.6666 Arial, Helvetica, sans-serif;
-  text-align: center;
   color: #848484;
+  text-align: center;
   width: 884px;
   margin: 51px auto 0 auto;
 }
 .signature {
-  color: #2e2e2e;
   font: 400 18px/1.1111111 Roboto, Arial, sans-serif;
-  margin: 18px auto 22px auto;
+  color: #2e2e2e;
   text-align: center;
+  margin: 18px auto 22px auto;
 }
 .text-say-hi {
-  margin: 56px auto 0 auto;
   font: 24px/1 Roboto, Arial, sans-serif;
   color: #000;
   text-align: center;
+  margin: 56px auto 0 auto; 
 }
 .get-in-touch-para {
   font: 400 16px/1.625 'Myriad Pro', Arial, sans-serif;
@@ -394,16 +371,15 @@ i.flaticon-earth {
   padding: 0;
 }
 .faces img {
-  width: 50px;
-  margin: 0 auto;
   display: block;
   width: 50px;
   height: 50px;
+  margin: 0 auto;
 }
 .photos li {
-  overflow: hidden;
   display: inline;
   text-align: center;
+  overflow: hidden;
 }
 .photos li:hover {
   cursor: pointer;
@@ -420,9 +396,9 @@ i.flaticon-earth {
   right: 0;
   display: block;
   height: 100%;
+  width: 50px;
   background: #d4213d;
   opacity: 0;
-  width: 50px;
 }
 .face-image:hover:before {
   opacity: 0.6;
@@ -431,17 +407,17 @@ i.flaticon-earth {
     footer
    ========================================================================== */
 .footer {
-  height: 130px;
-  background-color: #e3e3e3;
   display: flex;
   justify-content: center;
+  height: 130px;
+  background-color: #e3e3e3;
 }
 .footer-nav {
   list-style-type: none;
   display: flex;
-  width: 550px;
   justify-content: space-around;
   align-items: center;
+  width: 550px;
 }
 .footer-nav-item {
   margin-left: 37px;
@@ -450,9 +426,9 @@ i.flaticon-earth {
   margin-left: 0;
 }
 .footer-nav-link {
-  text-decoration: none;
-  color: #848484;
   font: 400 16px/1.625 Arial;
+  color: #848484;
+  text-decoration: none;
   display: block;
   width: 100%;
   height: 100%;
