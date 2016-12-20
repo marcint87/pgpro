@@ -221,11 +221,12 @@ body {
   list-style: none;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
   width: 314px;
+  height: 225px;
   margin-left: 123px;
 }
 
@@ -248,17 +249,35 @@ body {
       align-self: center;
 }
 
+.gear-position {
+  margin-top: 5px;
+  margin-left: 9px;
+  margin-bottom: 31px;
+}
+
+.star-position {
+  margin-top: 5px;
+  margin-left: -5px;
+  margin-bottom: 31px;
+}
+
+.planet-position {
+  margin-top: 5px;
+  margin-left: -18px;
+  margin-bottom: 31px;
+}
+
 .title {
   color: #222222;
   text-align: center;
-  margin-top: 31px;
+  margin-top: 0;
+  margin-bottom: 21px;
   font: 22px / 18px 'Roboto', Arial, sans-serif;
 }
 
 .text {
   color: #848484;
   text-align: center;
-  margin-top: 31px;
   font: 16px / 26px  Arial, sans-serif;
 }
 
@@ -268,6 +287,14 @@ i.flaticon-earth {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.star-position + h3 {
+  margin-left: -13px;
+}
+
+.planet-position + h3 {
+  margin-left: -29px;
 }
 
 /* ====================================
@@ -312,6 +339,8 @@ i.flaticon-earth {
   border-radius: 0 15px 15px 0;
   color: #fff;
   font: 400 22px/0.8181 "Myriad Pro", Arial, sans-serif;
+  padding-right: 11px;
+  padding-top: 6px;
 }
 
 .title-form {
@@ -367,7 +396,7 @@ i.flaticon-earth {
 }
 
 .text-say-hi {
-  margin: 54px auto 0 auto;
+  margin: 56px auto 0 auto;
   font: 24px/1 Roboto, Arial, sans-serif;
   color: #000;
   text-align: center;
